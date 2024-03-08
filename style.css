@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+header .woi{
+    color: black;
+}
+
+header i{
+    visibility: hidden;
+}
+
+.container-list{
+    display: flex;
+    gap: 30px;
+}
+
+.container-list a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.container-list a:hover{
+    color: coral;
+}
+
+header button{
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    font-family: 'Poppins', sans-serif;
+    border: 1.5px solid transparent;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+header button:hover{
+    border: 1.5px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+main{
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+main .content{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .title{
+    color: white;
+    font-size: 3rem;
+}
+
+.content .sub-title{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.content .container-desc{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    margin-top: -30px;
+}
+
+.content .container-desc p{
+    color: white;
+    font-weight: 200;
+    text-align: justify;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1000px){
+
+    .container-list{
+        background-color: black;
+        border-radius: 99px;
+        padding: 10px;
+        gap: 0px;
+        width: 280px;
+        justify-content: space-around;
+    }
+
+    .container-list a{
+        color: white;
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    header button{
+        visibility: hidden;
+    }
+
+    main .content{
+        top: 20%;
+    }
+
+    .content .title .sub-title{
+        font-size: 3rem;
+        color: black;
+    }
+
+    main .content{
+        width: 60%;
+    }
+
+    .content .container-desc p{
+        color: white;
+        font-weight: 200;
+        text-align: justify;
+        padding: 20px;
+        font-size: 0.9rem;
+        overflow: scroll;
+        height: 270px;
+        margin-top: -5px;
+        margin-bottom: -10px;
+    }
+}
